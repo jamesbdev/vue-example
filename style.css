@@ -3,3 +3,9 @@ h1 {
     font-family:Arial, Helvetica, sans-serif;
     color: #aaa;
 }
+
+.main {
+    width: 60%;
+    margin: 0 auto;
+    font-family:Arial, Helvetica, sans-serif;
+}

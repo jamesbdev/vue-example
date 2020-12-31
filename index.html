@@ -8,16 +8,29 @@
 </head>
 <body>
     <h1>Vue js example</h1>
-    <div id="app">
-        {{ message }}
-      </div>
+    <main class="main">
+        <div id="app">
+            {{ message }}
+          </div>
+    
+          <div id="app-2">
+            <span v-bind:title="message">
+              Hover your mouse over me for a few seconds
+              to see my dynamically bound title!
+            </span>
+          </div>
+          <div id="app-3">
+              <span v-if="seen">Now you see me</span>
+          </div>
+          <div id="app-4">
+              <ol>
+                  <li v-for="todo in todos">
+                      {{ todo.text }}
+                  </li>
+              </ol>
+          </div>
+    </main>
 
-      <div id="app-2">
-        <span v-bind:title="message">
-          Hover your mouse over me for a few seconds
-          to see my dynamically bound title!
-        </span>
-      </div>
     <!--vue JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="script.js"></script>
